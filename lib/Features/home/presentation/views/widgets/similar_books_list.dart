@@ -13,7 +13,10 @@ class SimilarBooksList extends StatelessWidget {
           itemBuilder: (context, index) {
             return const Padding(
               padding: EdgeInsets.symmetric(horizontal: 5),
-              child: CustomBookImage(),
+              child: CustomBookImage(
+                imageURL:
+                    "https://w7.pngwing.com/pngs/589/468/png-transparent-pile-of-books-the-book-stall-book-discussion-club-book-cover-book-design-book-stall-book-discussion-club-book-cover-thumbnail.png",
+              ),
             );
           }),
     );

@@ -14,7 +14,10 @@ class BookDetailsSection extends StatelessWidget {
       children: [
         Padding(
           padding: EdgeInsets.symmetric(horizontal: width * 0.25),
-          child: CustomBookImage(),
+          child: CustomBookImage(
+            imageURL:
+                "https://w7.pngwing.com/pngs/589/468/png-transparent-pile-of-books-the-book-stall-book-discussion-club-book-cover-book-design-book-stall-book-discussion-club-book-cover-thumbnail.png",
+          ),
         ),
         const SizedBox(
           height: 32,
