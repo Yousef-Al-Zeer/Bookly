@@ -15,13 +15,15 @@ class SimilarBooksList extends StatelessWidget {
           return SizedBox(
             height: MediaQuery.of(context).size.height * 0.17,
             child: ListView.builder(
+                itemCount: state.books.length,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
-                  return const Padding(
+                  return Padding(
                     padding: EdgeInsets.symmetric(horizontal: 5),
                     child: CustomBookImage(
                       imageURL:
-                          "https://w7.pngwing.com/pngs/589/468/png-transparent-pile-of-books-the-book-stall-book-discussion-club-book-cover-book-design-book-stall-book-discussion-club-book-cover-thumbnail.png",
+                          state.books[index].volumeInfo.imageLinks?.thumbnail ??
+                              "",
                     ),
                   );
                 }),
